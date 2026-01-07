@@ -1,0 +1,235 @@
+# Disable status bar
+%wd
+#
+# Load fonts
+<<<<<<< Updated upstream
+%Fl(3,14-InterTight.fnt)
+%Fl(4,14-InterTight-Medium.fnt)
+%Fl(8,32-Gabarito-SemiBold.fnt)
+%Fl(9,8-InterTight.fnt)
+=======
+%Fl(4,14-InterTight-Medium-14pt-CJK.fnt)
+%Fl(8,32-Gabarito-SemiBold-32pt-CJK.fnt)
+>>>>>>> Stashed changes
+#
+# Preload icons
+%xl(B,batteryStatus-4.bmp,0,0,11)
+# Preload icons
+%xl(SHUFFLENULL,shuffle_null.bmp,0,0)
+%xl(REPEATNULL,repeat_null.bmp,0,0)
+%xl(REPEAT,repeat.bmp,0,0)
+%xl(REPEATALL,repeat_all.bmp,0,0)
+%xl(REPEATONE,repeatOne.bmp,0,0)
+%xl(REPEATSHUFFLE,repeatShuffle.bmp,0,0)
+%xl(SHUFFLE,shuffle.bmp,0,0)
+%xl(PLAY,play_small.bmp,0,0)
+%xl(PAUSE,pause_small.bmp,0,0)
+%xl(VolumeIcons,VolumeIcons.bmp,0,0,4)
+%xl(VOLBG,volume_overlay_bg.bmp,0,0)
+%xl(lock,lock.bmp,0,0)
+%xl(LOCKNULL,lock_null.bmp,0,0)
+#
+# Preload rounded corner caps
+%xl(TCAP,bar-top-cap.bmp,0,0)
+%xl(BCAP,bar-bottom-cap.bmp,0,0)
+%xl(LCAP,bar-left-cap.bmp,0,0)
+%xl(RCAP,bar-right-cap.bmp,0,0)
+#
+#
+# ==============================================================================
+# LOGIC SECTION
+# ==============================================================================
+%?if(%St(battery display), =,numeric)<%Vd(batterytext)>
+%Vd(track)
+%Vd(artist)
+%Vd(album)
+%?mv(2.5)<%Vd(volumeoverlay)>>
+%Vd(lockicon)
+%?bs<%Vd(sleeptimer)>
+%Vd(repeat_icons)
+%Vd(shuffle_icon)
+#
+#
+# ==============================================================================
+# BACKGROUND VIEWPORTS
+# ==============================================================================
+#
+# Album Art (full screen)
+%V(0,0,320,240,-)%VB
+%Vf(EAEAEA)
+%Vb(000000)
+<<<<<<< Updated upstream
+%?C<|%x(AlbumPlaceholder,albumPlaceholder.bmp,0,0)>
+=======
+%?C<|%x(AlbumPlaceholder,albumPlaceholder_dark.bmp,0,0)>
+>>>>>>> Stashed changes
+%Cl(0,-40,320,320,c,c)
+%?C<%Cd>
+#
+# TOP BAR with rounded side caps (8px wide)
+# Middle section - solid black
+%V(16,4,-16,24,-)%VB
+%Vb(000000)
+#
+# BOTTOM BOX with rounded top/bottom caps
+# Middle section (adjusted to fit between 8px caps)
+%V(8,125,-8,-44,-)%VB
+%Vb(000000)
+#
+# MINIPLAYER BAR 
+# Middle section - solid black
+%V(16,-34,-16,24,-)%VB
+%Vb(000000)
+#
+# Reset viewport
+%V(0,0,-,-,-)
+#
+# Display rounded caps (after reset so they stay on top)
+# Top bar side caps
+%V(8,4,8,24,-)
+%xd(LCAP)
+#
+%V(-16,4,8,24,-)
+%xd(RCAP)
+#
+# Bottom box top/bottom caps
+%V(8,117,304,8,-)
+%xd(TCAP)
+#
+%V(8,-44,304,8,-)
+%xd(BCAP)
+#
+# Miniplayer side caps
+%V(8,-34,8,24,-)
+%xd(LCAP)
+#
+%V(-16,-34,8,24,-)
+%xd(RCAP)
+#
+#
+# ==============================================================================
+# TOP BAR
+# ==============================================================================
+# Lock Icon 
+%Vl(lockicon,16,10,9,12,-)
+%?mh<%xd(lock)|%xd(LOCKNULL)>
+#
+# Time and "Now Playing" 
+%V(32,8,183,16,4)
+%Vf(EAEAEA)
+%cH:%cM  Now Playing
+#
+# Shuffle icon 
+%Vl(shuffle_icon,180,9,14,14,-)
+%?if(%ps,=,s)<%xd(SHUFFLE)|%xd(SHUFFLENULL)>
+
+# Repeat icon
+%Vl(repeat_icons,202,9,30,14,-)
+%?mm<%xd(REPEATNULL)|%xd(REPEATALL)|%xd(REPEATONE)|%xd(REPEATSHUFFLE)>
+
+# Volume icon
+%V(-95,9,16,14,-)
+%?if(%pv,=,-90)<%xd(VolumeIcons,1)|%?if(%pv,<,-40)<%xd(VolumeIcons,2)|%?if(%pv,<,-10)<%xd(VolumeIcons,3)|%xd(VolumeIcons,4)>>>
+
+# Battery Icon 
+%V(-78,9,59,14,-)
+%Vf(EAEAEA)
+%al%?bp<%?bl<%xd(Bg)|%xd(Bg)|%xd(Bh)|%xd(Bh)|%xd(Bh)|%xd(Bi)|%xd(Bi)|%xd(Bj)|%xd(Bj)|%xd(Bj)|%xd(Bj)|%xd(Bk)|%xd(Bk)|%xd(Bk)|%xd(Bk)|%xd(Bk)|%xd(Bk)|%xd(Bk)|%xd(Bk)|%xd(Bk)|%xd(Bk)|%xd(Bk)>|%?bl<%xd(Ba)|%xd(Ba)|%xd(Ba)|%xd(Bb)|%xd(Bb)|%xd(Bb)|%xd(Bb)|%xd(Bc)|%xd(Bc)|%xd(Bc)|%xd(Bc)|%xd(Bc)|%xd(Bd)|%xd(Bd)|%xd(Bd)|%xd(Bd)|%xd(Bd)|%xd(Be)|%xd(Be)|%xd(Be)|%xd(Bf)|%xd(Bf)>>
+#
+# ==============================================================================
+# VOLUME OVERLAY - Appears over top bar when adjusting volume
+# ==============================================================================
+#
+# Volume overlay 
+%Vl(volumeoverlay,8,4,304,24,-)
+%xd(VOLBG)
+#
+# Volume icon
+%Vl(volumeoverlay,-75,9,16,14,-)
+%?if(%pv,=,-90)<%xd(VolumeIcons,1)|%?if(%pv,<,-40)<%xd(VolumeIcons,2)|%?if(%pv,<,-10)<%xd(VolumeIcons,3)|%xd(VolumeIcons,4)>>>
+#
+# Volume slider
+%Vl(volumeoverlay,75,14,-78,4,-)
+%pv(0,0,-,4)
+#
+# Volume dB value (right side)
+%Vl(volumeoverlay,-52,10,36,14,4)
+%Vf(EAEAEA)
+%pvdB
+#
+#
+# ==============================================================================
+# TRACK INFO
+# ==============================================================================
+#
+# Track Title 
+%Vl(track,16,-115,-16,36,8)
+%Vf(EAEAEA)
+%s%al%?it<%it|%fn>
+#
+# Artist 
+%Vl(artist,16,-85,-16,22,4)
+%Vf(EAEAEA)
+%al%s%?ia<%ia|>
+#
+# Album
+%Vl(album,160,-83,-16,22,4)
+%Vf(AAAAAA)
+%s%ar%?id<%id|>
+#
+# Progress Bar
+%V(16,-68,-16,4,-)
+%pb(0,0,-,4)
+#
+# Play/Pause icon
+%V(14,-61,14,14,-)
+%?mp<%xd(PAUSE)|%xd(PLAY)|%xd(PAUSE)|%xd(PAUSE)>
+#
+# Time/Total
+%V(30,-61,100,14,4)
+%Vf(AAAAAA)
+%pc / %pt
+#
+# Format/Bitrate
+<<<<<<< Updated upstream
+%V(-100,-61,82,14,3)
+%Vf(AAAAAA)
+%ar%fc  %fbkbps
+#
+# Playlist progress
+%Vl(pl_remaining,28,-60,-150,14,9)
+%Vf(EAEAEA)
+%s%al%pp/%pe  -%pr
+#
+# ==============================================================================
+# MINIPLAYER (Bottom bar with track count and up next info)
+# ==============================================================================
+#
+# Track count
+%V(16,-29,90,14,4)
+%Vf(EAEAEA)
+=======
+%V(-100,-61,82,14,4)
+%Vf(AAAAAA)
+%ar%fc  %fbkbps
+#
+#
+# ==============================================================================
+# MINIPLAYER (Bottom bar with track count and up next info)
+# ==============================================================================
+#
+# Track count
+%V(16,-29,90,14,4)
+%Vf(EAEAEA)
+>>>>>>> Stashed changes
+%pp of %pe
+#
+# "Up Next:" label
+%V(110,-29,60,14,4)
+%Vf(AAAAAA)
+Up Next:
+#
+# Next track info
+%V(172,-29,-20,14,4)
+%Vf(AAAAAA)
+%s%ar%?It<%It - %Ia| - >
