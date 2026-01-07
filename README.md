@@ -1,6 +1,7 @@
-# radius (dark) theme
+# radius-dark
 
-a custom theme built with the Rockbox theming engine. 
+a custom theme built with the Rockbox theming engine.
+ 
 I recently got hooked into the iPod resurgence that has been happening for the past few years and I wanted to finally take on the project of modding my own. I figured I would also load Rockbox onto it and create my own theme for it. The experience was ... something.
 
 What I initially came up with as far as designs was strictly based upon my experience as a web dev and when I took those designs to folks who knew the platform, I was told how limiting it could be. 

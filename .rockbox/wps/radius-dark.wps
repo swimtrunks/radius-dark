@@ -2,15 +2,8 @@
 %wd
 #
 # Load fonts
-<<<<<<< Updated upstream
-%Fl(3,14-InterTight.fnt)
-%Fl(4,14-InterTight-Medium.fnt)
-%Fl(8,32-Gabarito-SemiBold.fnt)
-%Fl(9,8-InterTight.fnt)
-=======
 %Fl(4,14-InterTight-Medium-14pt-CJK.fnt)
 %Fl(8,32-Gabarito-SemiBold-32pt-CJK.fnt)
->>>>>>> Stashed changes
 #
 # Preload icons
 %xl(B,batteryStatus-4.bmp,0,0,11)
@@ -58,11 +51,7 @@
 %V(0,0,320,240,-)%VB
 %Vf(EAEAEA)
 %Vb(000000)
-<<<<<<< Updated upstream
-%?C<|%x(AlbumPlaceholder,albumPlaceholder.bmp,0,0)>
-=======
 %?C<|%x(AlbumPlaceholder,albumPlaceholder_dark.bmp,0,0)>
->>>>>>> Stashed changes
 %Cl(0,-40,320,320,c,c)
 %?C<%Cd>
 #
@@ -191,24 +180,6 @@
 %pc / %pt
 #
 # Format/Bitrate
-<<<<<<< Updated upstream
-%V(-100,-61,82,14,3)
-%Vf(AAAAAA)
-%ar%fc  %fbkbps
-#
-# Playlist progress
-%Vl(pl_remaining,28,-60,-150,14,9)
-%Vf(EAEAEA)
-%s%al%pp/%pe  -%pr
-#
-# ==============================================================================
-# MINIPLAYER (Bottom bar with track count and up next info)
-# ==============================================================================
-#
-# Track count
-%V(16,-29,90,14,4)
-%Vf(EAEAEA)
-=======
 %V(-100,-61,82,14,4)
 %Vf(AAAAAA)
 %ar%fc  %fbkbps
@@ -221,7 +192,6 @@
 # Track count
 %V(16,-29,90,14,4)
 %Vf(EAEAEA)
->>>>>>> Stashed changes
 %pp of %pe
 #
 # "Up Next:" label
