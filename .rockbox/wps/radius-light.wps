@@ -49,26 +49,26 @@
 #
 # Album Art (full screen)
 %V(0,0,320,240,-)%VB
-%Vf(EAEAEA)
-%Vb(000000)
+%Vf(1A1A1A)
+%Vb(EAEAEA)
 %?C<|%x(AlbumPlaceholder,albumPlaceholder_dark.bmp,0,0)>
 %Cl(0,-40,320,320,c,c)
 %?C<%Cd>
 #
 # TOP BAR with rounded side caps (8px wide)
-# Middle section - solid black
+# Middle section - solid light background
 %V(16,4,-16,24,-)%VB
-%Vb(000000)
+%Vb(FFFFFF)
 #
 # BOTTOM BOX with rounded top/bottom caps
 # Middle section (adjusted to fit between 8px caps)
 %V(8,125,-8,-44,-)%VB
-%Vb(000000)
+%Vb(FFFFFF)
 #
 # MINIPLAYER BAR
-# Middle section - solid black
+# Middle section - solid light background
 %V(16,-28,-16,24,-)%VB
-%Vb(000000)
+%Vb(FFFFFF)
 #
 # Reset viewport
 %V(0,0,-,-,-)
@@ -105,7 +105,7 @@
 #
 # Time and "Now Playing" 
 %V(32,8,183,16,4)
-%Vf(EAEAEA)
+%Vf(1A1A1A)
 %cH:%cM  Now Playing
 #
 # Shuffle icon 
@@ -122,7 +122,7 @@
 
 # Battery Icon 
 %V(-78,9,59,14,-)
-%Vf(EAEAEA)
+%Vf(1A1A1A)
 %al%?bp<%?bl<%xd(Bg)|%xd(Bg)|%xd(Bh)|%xd(Bh)|%xd(Bh)|%xd(Bi)|%xd(Bi)|%xd(Bj)|%xd(Bj)|%xd(Bj)|%xd(Bj)|%xd(Bk)|%xd(Bk)|%xd(Bk)|%xd(Bk)|%xd(Bk)|%xd(Bk)|%xd(Bk)|%xd(Bk)|%xd(Bk)|%xd(Bk)|%xd(Bk)>|%?bl<%xd(Ba)|%xd(Ba)|%xd(Ba)|%xd(Bb)|%xd(Bb)|%xd(Bb)|%xd(Bb)|%xd(Bc)|%xd(Bc)|%xd(Bc)|%xd(Bc)|%xd(Bc)|%xd(Bd)|%xd(Bd)|%xd(Bd)|%xd(Bd)|%xd(Bd)|%xd(Be)|%xd(Be)|%xd(Be)|%xd(Bf)|%xd(Bf)>>
 #
 # ==============================================================================
@@ -143,7 +143,7 @@
 #
 # Volume dB value (right side)
 %Vl(volumeoverlay,-52,10,36,14,4)
-%Vf(EAEAEA)
+%Vf(1A1A1A)
 %pvdB
 #
 #
@@ -153,17 +153,17 @@
 #
 # Track Title
 %Vl(track,16,-115,-16,36,8)
-%Vf(EAEAEA)
+%Vf(5F5F5F)
 %s%al%?it<%it|%fn>
 #
 # Artist
 %Vl(artist,16,-85,-16,22,4)
-%Vf(EAEAEA)
+%Vf(1A1A1A)
 %al%s%?ia<%ia|>
 #
 # Album
 %Vl(album,160,-85,-16,22,4)
-%Vf(AAAAAA)
+%Vf(555555)
 %s%ar%?id<%id|>
 #
 # Progress Bar
@@ -176,13 +176,13 @@
 #
 # Time/Total
 %V(30,-61,100,14,4)
-%Vf(AAAAAA)
+%Vf(555555)
 %pc / %pt
 #
 # Format/Bitrate
 %V(-100,-61,82,14,4)
-%Vf(AAAAAA)
-%ar%fc  %fbkbps
+%Vf(555555)
+%al%fc  %fbkbps
 #
 #
 # ==============================================================================
@@ -191,15 +191,15 @@
 #
 # Track count
 %V(16,-23,90,14,4)
-%Vf(EAEAEA)
+%Vf(1A1A1A)
 %pp of %pe
 #
 # "Up Next:" label
 %V(110,-23,60,14,4)
-%Vf(AAAAAA)
+%Vf(555555)
 Up Next:
 #
 # Next track info
 %V(172,-23,-20,14,4)
-%Vf(AAAAAA)
+%Vf(555555)
 %s%ar%?It<%It - %Ia| - >

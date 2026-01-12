@@ -50,26 +50,26 @@
 # -----------------------------------------------------------------------------
 # FULL SCREEN BACKGROUND
 # -----------------------------------------------------------------------------
-# Clear entire screen with dark gray background first
+# Clear entire screen with light gray background first
 %V(0,0,320,240,-)
 %VB
-%Vb(151515)
+%Vb(E2E2E1)
 
 # -----------------------------------------------------------------------------
 # TOP BAR BACKGROUND
 # -----------------------------------------------------------------------------
-# Middle section of top bar (solid black, between rounded caps)
+# Middle section of top bar (solid light background, between rounded caps)
 %V(16,4,-16,24,-)
 %VB
-%Vb(000000)
+%Vb(FFFFFF)
 
 # -----------------------------------------------------------------------------
 # BOTTOM BAR BACKGROUND
 # -----------------------------------------------------------------------------
-# Middle section of bottom bar (solid black, between rounded caps)
+# Middle section of bottom bar (solid light background, between rounded caps)
 %V(16,-28,-16,24,-)
 %VB
-%Vb(000000)
+%Vb(FFFFFF)
 
 # Reset to full screen viewport
 %V(0,0,-,-,-)
@@ -94,8 +94,8 @@
 # -----------------------------------------------------------------------------
 # Define the scrollable list area between top and bottom bars
 %Vi(menu,16,32,-16,-29,4)
-%Vf(AAAAAA)           # Light gray text
-%Vb(000000)           # Black background
+%Vf(555555)           # Dark gray text
+%Vb(EAEAEA)           # Light background
 
 # ==============================================================================
 # TOP BAR ELEMENTS
@@ -105,14 +105,14 @@
 # TIME
 # -----------------------------------------------------------------------------
 %V(16,10,50,16,4)
-%Vf(EAEAEA)
+%Vf(1A1A1A)
 %s%cH:%cM
 
 # -----------------------------------------------------------------------------
 # CURRENT DIRECTORY
 # -----------------------------------------------------------------------------
 %V(52,10,120,16,4)
-%Vf(EAEAEA)
+%Vf(1A1A1A)
 %s%Lt
 
 # -----------------------------------------------------------------------------
@@ -153,7 +153,7 @@
 # TRACK INFO
 # -----------------------------------------------------------------------------
 %V(34,-23,-20,14,4)
-%Vf(EAEAEA)
+%Vf(1A1A1A)
 %s%?it<%it|%fn> - %?ia<%ia|Play some music.>
 
 # ==============================================================================
