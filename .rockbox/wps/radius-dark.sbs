@@ -31,8 +31,9 @@
 # Lock screen icon
 %xl(lock,lock.bmp,0,0)
 
-# Play icon
+# Play/Pause icon
 %xl(PLAY,play_small.bmp,0,0)
+%xl(PAUSE,pause_small.bmp,0,0)
 
 # Rounded corner caps for UI bars
 %xl(LCAP,bar-left-cap.bmp,0,0)
@@ -147,7 +148,7 @@
 # PLAY ICON
 # -----------------------------------------------------------------------------
 %V(16,-23,14,14,-)
-%?mp<%xd(PLAY)|%xd(PLAY)|%xd(PLAY)|%xd(PLAY)>
+%?mp<%xd(PAUSE)|%xd(PLAY)|%xd(PAUSE)|%xd(PAUSE)>
 
 # -----------------------------------------------------------------------------
 # TRACK INFO
