@@ -9,22 +9,21 @@ there are only two screens here : sbs and wps which will handle the base screens
 - MicroNotoSans for CJK support (combined into the two above)
 
 ## wps screen - dark
-<img width="328" height="247" alt="Screenshot 2026-01-07 at 10 31 23 AM" src="https://github.com/user-attachments/assets/ebcb98ae-a0be-4482-b34f-3539704b3363" />
-<img width="327" height="251" alt="Screenshot 2026-01-07 at 10 32 39 AM" src="https://github.com/user-attachments/assets/e7ceccf0-68e7-4d17-bd19-a95ac468a8e1" />
-<img width="328" height="249" alt="Screenshot 2026-01-07 at 10 49 51 AM" src="https://github.com/user-attachments/assets/49a945d6-69c2-417b-a336-bfa937b9c28a" />
+<img width="326" height="249" alt="Screen Shot 2026-01-12 at 21 00 12 PM" src="https://github.com/user-attachments/assets/43280cad-3a15-4506-88c3-f6870d400f90" />
 
 ## sbs screen - dark
-<img width="328" height="249" alt="Screenshot 2026-01-07 at 10 33 00 AM" src="https://github.com/user-attachments/assets/b731b6ee-03e5-43fc-b9fe-59e5afbcd3c8" />
-<img width="328" height="249" alt="Screenshot 2026-01-07 at 10 45 51 AM" src="https://github.com/user-attachments/assets/e6149f24-cc1f-4924-8cc0-4c60f8d84931" />
+<img width="326" height="247" alt="Screen Shot 2026-01-12 at 20 59 58 PM" src="https://github.com/user-attachments/assets/75395246-7b74-4c9e-afb6-dede65598da5" />
+<img width="327" height="248" alt="Screenshot 2026-01-12 at 9 00 48 PM" src="https://github.com/user-attachments/assets/e16a0caa-d19e-4e7a-afe3-5942540e12ac" />
 
 ## usb screen - dark
-<img width="320" height="240" alt="Frame 79" src="https://github.com/user-attachments/assets/4e31b6ea-cbe3-46c3-8e7b-295388d97fbc" />
+<img width="320" height="240" alt="radiusUSB" src="https://github.com/user-attachments/assets/dfeccaf6-3874-4268-8a40-d43371a19f84" />
 
-## wps screen - light (wip)
-<img width="328" height="251" alt="Screenshot 2026-01-08 at 11 12 03 PM" src="https://github.com/user-attachments/assets/c0df9c3b-1b72-4e46-bd9b-adaddd2c0475" />
+## wps screen - light
+<img width="326" height="249" alt="Screenshot 2026-01-12 at 8 58 09 PM" src="https://github.com/user-attachments/assets/f0cd04fb-7052-40d8-8f0e-9684319a1e4e" />
 
-## sbs screen - light (wip)
-<img width="327" height="250" alt="Screenshot 2026-01-08 at 11 11 37 PM" src="https://github.com/user-attachments/assets/2b96e143-e59c-4279-82b1-1bc1d9a1ee61" />
+## sbs screen - light
+<img width="322" height="241" alt="Screen Shot 2026-01-12 at 20 57 05 PM" src="https://github.com/user-attachments/assets/4af90410-b1b3-4035-88e6-6fe0ea64b474" />
+<img width="322" height="242" alt="Screen Shot 2026-01-12 at 20 57 26 PM" src="https://github.com/user-attachments/assets/18b3d9f8-75a4-42d9-970b-ca6219e6b8ff" />
 
 ## usb screen - light
-<img width="320" height="240" alt="usbbackdrop 1" src="https://github.com/user-attachments/assets/f80ba629-a477-4329-887a-8358c8e17d1c" />
+<img width="320" height="240" alt="radiusUSB-light" src="https://github.com/user-attachments/assets/4db12e1f-2a14-4b32-9d6f-7cd63be90bec" />
